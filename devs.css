@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(133deg, #FF6200 0%, #F4561F 11%, #EA4B3B 22%, #DF4157 33%, #D53673 44%, #CB2B8F 56%, #C120AB 67%, #B616C7 78%, #AC0BE3 89%, #A200FF 100%);
+    font-family: 'Arial', sans-serif; 
+    margin: 0;    
+    padding: 0;   
+    min-height: 100vh;  
+    display: flex;      
+    flex-direction: column; 
+    color: white;                
+    text-align: center;
+}
+
+.title {
+    font-size: 100px; 
+    margin: 5rem 0;  
+    color: white;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    padding-top: 3rem; 
+    font-family: 'Most Wazted(RUS BY LYAJKA)', sans-serif; 
+    font-weight: normal; 
+    line-height: 0.8;  
+    margin-bottom: 0;  
+}
+
+
+.gallery {
+    display: flex;               
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2rem; 
+    padding: 1rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.photo {
+    width: 300px;  
+    height: 250px;   
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+}

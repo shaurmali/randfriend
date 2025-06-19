@@ -1,0 +1,144 @@
+/* Общие стили для всего документа */
+body {
+    background: linear-gradient(133deg, #FF6200 0%, #F4561F 11%, #EA4B3B 22%, #DF4157 33%, #D53673 44%, #CB2B8F 56%, #C120AB 67%, #B616C7 78%, #AC0BE3 89%, #A200FF 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.form1 {
+    background-color: rgba(30, 30, 30, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: center;
+    color: white;
+    font-size: 15px; /* Немного меньше шрифт */
+    transform: scale(0.9); /* Легкое масштабирование */
+    transform-origin: top center;
+    position: relative; /* Make form1 relative for absolute positioning */
+}
+
+.form1 h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8em;
+}
+
+.form2 {
+    position: relative;
+}
+
+.form2 label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-style: italic;
+    font-size: 0.9em;
+    opacity: 1;
+}
+
+.form2 input:focus + label,
+.form2 input:valid + label {
+    top: -6px;
+    font-size: 0.7em;
+    color: #fff;
+    opacity: 0;
+}
+
+.form2 input[type="text"],
+.form2 input[type="email"],
+.form2 input[type="date"],
+.form2 input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+button {
+    background-color: #ff7b00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e67000;
+}
+
+.avatar-upload {
+    margin-bottom: 20px;
+}
+
+.avatar-preview {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    margin: 0 auto 10px;
+}
+
+.avatar-preview > div {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.avatar-edit input + label {
+    background: #ff7b00;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+p,
+a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgba(30, 30, 30, 0.9);
+    color: #ddd;
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+}
